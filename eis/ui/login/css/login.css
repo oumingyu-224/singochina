@@ -1,0 +1,485 @@
+﻿@font-face{
+    font-family: 'Montserrat-Regular';
+    src: url('../../images/new/Montserrat-Regular.ttf');
+}
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url('https://mtm.singo.co/eis/ui/images/new/Montserrat-Bold-3.otf');
+}
+*{
+    font-family: Montserrat-Regular;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.hDFlex{
+    display: flex;
+    align-items: center;
+}
+#langchang a:hover, .hFooter a:hover{
+    color: #162D83;
+}
+a{color: rgba(0, 0, 0, 0.6);cursor: pointer;}
+a:hover{color: rgba(0, 0, 0, 0.6);text-decoration: none;}
+input:-webkit-autofill { box-shadow: 0 0 0px 1000px white inset !important;}
+.hFlex{
+    flex: 1;
+}
+.hBody{
+    height: 100vh;
+    width: 100vw;
+    background: url(../../images/new/bg.png) center no-repeat;
+    background-size: cover;
+}
+.hLogo{
+    display: inline-block;
+    font-size: 0;
+    margin-bottom: 60px;
+}
+.hLogo img{
+    width: 128px;
+}
+.hLoginBtn{
+    height: 52px;
+    border-radius: 4px;
+    background: #162D83;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    border: 0;
+}
+.hHeader{
+    width: 100%;
+    padding: 46px 46px 0 46px;
+}
+.hInputImg{
+    position: absolute;
+    width: 18px;
+    left: 14px;
+    top: 17px;
+}
+.hFooter{
+    color: rgba(0, 0, 0, 0.6);
+    padding:100px 0 42px 46px;
+    width: 100%;
+}
+.hLogoBox{
+    padding: 50px 36px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px -4px rgba(170, 173, 181, 0.2787),0px 6px 16px 0px rgba(195, 197, 201, 0.2631),0px 9px 28px 8px rgba(170, 173, 181, 0.1532);
+}
+.hLogoBox .hTitle{
+    font-size: 36px;
+    font-family: Montserrat-Bold;
+    margin-bottom: 24px;
+}
+.hLogoBox .hInput{
+    width: 320px;
+    padding: 15px 42px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    line-height: 22px;
+    height: 22px;
+    box-sizing: content-box;
+    margin-bottom: 16px;
+    outline: none;
+}
+.header_nav{
+    height : 36px;
+    background-color: #c0a057;
+    font-family: "微软雅黑";
+    color: #ffffff;
+    width: 100%;
+}
+
+.header_nav_font{
+    font-family: "微软雅黑";
+    color: white;
+    font-weight: bold;
+    text-decoration:none!important;
+    cursor:pointer!important;
+}
+.header_nav_content{
+    padding-top: 7px;
+}
+
+.body_content{
+    width: 100%;
+    height: 95%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+}
+.body_content_login{
+    width: 100%;
+    height: 85%;
+    background-image: url('../../images/yunyibackimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div_logo{
+    width: 100%;
+    height: 18%;
+    position: relative;
+}
+
+.div_logo_line{
+    background-color: #c0a057;
+    height: 20px;
+    width: 100%;;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.div_logo_icon{
+    position: absolute;
+    left: 20%;
+    bottom: 0px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.div_login{
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    margin-top:5%;
+}
+
+.div_login_icon{
+    margin-top: 8%;
+    width: 85%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+@media screen and (min-width: 400px){
+
+    .btn_login_icon_sm{
+
+        /*background-color: white;*/
+        background: none;
+        /*border-style: dotted;*/
+        /*border-color: gray;*/
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #c0a057;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "微软雅黑";
+        cursor:default;
+        width: 100%;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (min-width: 700px){
+
+    .btn_login_icon {
+
+        /*background-color: white;*/
+        background: none;
+        /*border-style: dotted;*/
+        /*border-color: gray;*/
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #c0a057;
+        font-size: 22px;
+        font-weight: 600;
+        font-family: "微软雅黑";
+        cursor: default;
+        width: 100%;
+        letter-spacing: 5px;
+
+    }
+}
+
+
+.btn_login_icon:hover, .btn_login_icon:active, .btn_login_icon:focus{
+    color: #c0a057;
+}
+.div_login_form{
+    margin-top: 25px;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 400px) {
+
+     .login_form_font_sm{
+
+        color: #c0a057;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: "微软雅黑";
+        letter-spacing: 2px;;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    .login_form_font_md{
+
+        color: #c0a057;
+        font-size: 17px;
+        font-weight: 600;
+        font-family: "微软雅黑";
+        letter-spacing: 2px;;
+    }
+}
+
+
+.form_row{
+    margin-top: 22px;
+    width: 100%;
+}
+
+.form_row_sm{
+    margin-top: 22px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_label_div{
+
+    position: relative;
+    /*width: 20%;*/
+    height: 40px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+
+.form_label_div span{
+    position: absolute;
+    left:5px;
+    bottom: 0px;
+}
+
+.form_input_div{
+
+    width: 100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+.form_input{
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: #c0a057 1px solid;
+    width: 100%;
+    background: none;
+    padding-top: 7px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #c0a057;
+ }
+
+/* .btn_login_submit{
+
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: #c0a057;
+    font-size:16px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    width: 100%;
+    height: 40px;
+    border: #c0a057 1px solid;
+} */
+
+.footer_content{
+    width: 100%;
+    height: 15%;
+}
+.footer_line{
+
+    width: 100%;
+    height: 7px;
+    background-color: #c0a057;
+}
+.footer_icon_div{
+    width: 100%;
+    height: 40%;
+}
+
+.footer_icon{
+
+    width: 10%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.footer_h5{
+    text-align: center;
+    vertical-align: middle;
+    color: #c0a057;
+
+}
+.remember_div{
+
+}
+.remember_span{
+    /* color: #c0a057; */
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    /* font-weight: 600; */
+}
+/* Custom Checkbox
+=================================================================== */
+.checkbox-custom {
+    position: relative;
+    padding: 0 0 0 25px;
+    /* margin-bottom: 7px; */
+    margin-top: 0;
+}
+.checkbox-custom.checkbox-inline {
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-group .checkbox-custom.checkbox-inline {
+    margin-top: 7px;
+    padding-top: 0;
+}
+.checkbox-custom:last-child, .checkbox-custom:last-of-type {
+    margin-bottom: 0;
+}
+.checkbox-custom input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.checkbox-custom input[type="checkbox"]:checked + label::before {
+    background: #162D83;
+    border: 1px solid #162D83;
+}
+.checkbox-custom input[type="checkbox"]:checked + label:after {
+    position: absolute;
+    display: inline-block;
+    font-family: 'FontAwesome';
+    content: '\F00C';
+    top: 50%;
+    left: 4px;
+    margin-top: -5px;
+    font-size: 11px;
+    line-height: 1;
+    width: 16px;
+    height: 16px;
+    color: #FFF;
+}
+.checkbox-custom input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+}
+.checkbox-custom input[type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+.checkbox-custom input[type="checkbox"]:disabled + label {
+    cursor: not-allowed;
+}
+.checkbox-custom input[type="checkbox"]:disabled + label:before {
+    background-color: #eee;
+}
+.checkbox-custom label {
+    cursor: pointer;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.checkbox-custom label:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -9px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+.checkbox-custom label + label.error {
+    display: block;
+}
+.checkbox-primary input[type="checkbox"]:checked + label:after {
+    color: #fff;
+}
+.checkbox-primary label:before {
+    background: #2693FF;
+    border-color: #2693FF;
+}
+.checkbox-text-primary input[type="checkbox"]:checked + label:after {
+    color: #cccccc;
+}
+.checkbox-success input[type="checkbox"]:checked + label:after {
+    color: #fff;
+}
+.checkbox-success label:before {
+    background: #47a447;
+    border-color: #3f923f;
+}
+.checkbox-text-success input[type="checkbox"]:checked + label:after {
+    color: #47a447;
+}
+.checkbox-warning input[type="checkbox"]:checked + label:after {
+    color: #fff;
+}
+.checkbox-warning label:before {
+    background: #ed9c28;
+    border-color: #e89113;
+}
+.checkbox-text-warning input[type="checkbox"]:checked + label:after {
+    color: #ed9c28;
+}
+.checkbox-danger input[type="checkbox"]:checked + label:after {
+    color: #fff;
+}
+.checkbox-danger label:before {
+    background: #d2322d;
+    border-color: #bd2d29;
+}
+.checkbox-text-danger input[type="checkbox"]:checked + label:after {
+    color: #d2322d;
+}
+.checkbox-info input[type="checkbox"]:checked + label:after {
+    color: #fff;
+}
+.checkbox-info label:before {
+    background: #5bc0de;
+    border-color: #46b8da;
+}
+.checkbox-text-info input[type="checkbox"]:checked + label:after {
+    color: #5bc0de;
+}
+.checkbox-dark input[type="checkbox"]:checked + label:after {
+    color: #fff;
+}
+.checkbox-dark label:before {
+    background: #171717;
+    border-color: #0a0a0a;
+}
+.checkbox-text-dark input[type="checkbox"]:checked + label:after {
+    color: #171717;
+}

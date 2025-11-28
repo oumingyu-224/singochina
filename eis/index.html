@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Made to Measure</title>
+	<link rel="icon" href="/eis/ui/images/new/logoTitle.png" type="image/x-icon">
+ 	<link rel="shortcut icon" href="/eis/ui/images/new/logoTitle.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- start: Css-->
+    <link rel="stylesheet" href="ui/jslib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ui/jslib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ui/jslib/font/font.css">
+    <link rel="stylesheet" href="ui/login/css/login.css">
+    <!-- end: Css-->
+</head>
+
+<body>
+<div class="hBody hDFlex" style="flex-direction:column;justify-content:center">
+        <div class="hDFlex hHeader">
+            <div class="hFlex"></div>
+            <div id="langchang">
+                <span style="margin-right:5px;"><a data-i18n-language="zh">中文版</a></span>|<span style="margin-left:5px;"><a data-i18n-language="en">EN</a></span>
+                <!-- <span style="margin-left:5px;"><a data-i18n-language="en">EN</a></span> -->
+            </div>
+        </div>
+        <div style="margin-top:10px;text-align: center">
+            <span id="error_message" style="color:red;">
+            </span>
+        </div>
+        <div class="hFlex hDFlex">
+            <form id="loginForm" action="j_spring_security_check" method="post" class="hDFlex hFlex" style="flex-direction:column;justify-content:center">    
+<div class="hLogoBox">
+                    <div class="hTitle" data-text="common_3">Login</div>
+                    <div style="position:relative">
+                        <img class="hInputImg" src="ui/images/new/user.png">
+                        <input class="hInput" type="text" class="form_input" data-i18n="local" data-text="common_1" placeholder="Username" name="j_username" onfocus="this.placeholder=''" onkeyup="this.value = this.value.toUpperCase();" placeholder="Username">
+                    </div>
+                    <div style="position:relative">
+                        <img class="hInputImg" src="ui/images/new/password.png">
+                        <input class="hInput" type="password" class="form_input" data-i18n="local" data-text="common_2" placeholder="Password" name="j_password" onfocus="this.placeholder=''" placeholder="Password">
+                    </div>
+                    <div class="hDFlex">
+                        <div class="checkbox-custom checkbox-default">
+                            <input type="checkbox" name="_spring_security_remember_me">
+                            <label><span data-i18n="local" data-text="common_4" class="remember_span">Remember Password</span></label>
+                        </div>
+                        <div class="hFlex"></div>
+                    </div>
+                    <div>
+                        <input type="submit" class="hLoginBtn btn_login_submit" data-i18n="#login" data-text="common_0" value="Sign in">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="hFooter">
+</div>
+    </div>
+<!-- start: JavaScript-->
+
+<script src="ui/jslib/jquery/jquery-2.1.1.js"></script>
+<script src="ui/jslib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="ui/login/js/login.js"></script>
+<script src="ui/jslib/jquery-i18n/jquery.i18n.properties-min-1.0.9.js"></script>
+<script src="ui/jslib/jquery-cookie/jquery.cookie.js"></script>
+<script src="ui/common/js/I18nUtil.js"></script>   
+<!-- end: JavaScript-->
+</body>
+</html>
